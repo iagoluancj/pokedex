@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="./src/styles/components/search.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/components/pokedex.css">
+    <link rel="stylesheet" href="./src/styles/components/flip.css">
+    <link rel="stylesheet" href="./src/styles/components/navBar.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="navBar">
+                <img src="./src/imgs/pokemon-logo-8.png" alt="Logo pokemon">
+                <i class="material-icons" id="menuBurguer" onclick="openMenu()">menu</i>
+                <ul class="menuDesktop">
+                    <li class="dropDown__Itens"><i class="material-icons">home</i>Pagina Inicial</li>
+                    <li class="dropDown__Itens"><i class="material-icons">circle</i>Pokedex</li>
+                    <li class="dropDown__Itens"><i class="material-icons">favorite</i>Minha pokedex</li>
+                </ul>
+            </div>
+        </div>
+        <menu id="menuNav">
+            <ul class="dropDown">
+                <li class="dropDown__Itens"><i class="material-icons">home</i>Pagina Inicial</li>
+                <li class="dropDown__Itens"><i class="material-icons">circle</i>Pokedex</li>
+                <li class="dropDown__Itens"><i class="material-icons">favorite</i>Minha pokedex</li>
+            </ul>
+        </menu>
+    </nav>
+
+    <section class="content">
+        <div class="header">
+            <h1 class="title">Pokedex</h1>
+            filtros
+            <div class="submit">
+                <input type="text" placeholder="Procure pelo seu pokemon" class="search" id="searchInput">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" class="search searchButton" viewBox="0 -960 960 960"
+                    width="40">
+                    <path
+                        d="M779.385-153.846 528.923-404.307q-30 25.538-69 39.538-39 14-78.385 14-96.1 0-162.665-66.529-66.566-66.529-66.566-162.577t66.529-162.702q66.529-66.654 162.577-66.654 96.049 0 162.702 66.565Q610.769-676.101 610.769-580q0 41.692-14.769 80.692-14.769 39-38.769 66.693l250.462 250.461-28.308 28.308ZM381.538-390.769q79.616 0 134.423-54.808Q570.769-500.385 570.769-580q0-79.615-54.808-134.423-54.807-54.808-134.423-54.808-79.615 0-134.423 54.808Q192.308-659.615 192.308-580q0 79.615 54.807 134.423 54.808 54.808 134.423 54.808Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="searchResult">
+            <p id="resultCount"></p>
+        </div>
+
+        <ol id="pokemonList" class="pokemons">
+        </ol>
+
+        <div class="pagination">
+            <button class="hoverClass " id="loadMoreButton" type="button">Load more</button>
+        </div>
+    </section>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/search.js"></script>
+    <script src="./src/js/card.js"></script>
+    <script src="./src/js/pokemon-model.js"></script>
+    <script src="./src/js/poke-api.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
