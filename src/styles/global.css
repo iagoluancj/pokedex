@@ -7,7 +7,6 @@
     --txt-secondaryColorW: #fff;
 }
 
-
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -48,6 +47,10 @@ h1 {
     align-items: center;
 
     background-color: #ffdd00;
+}
+
+a {
+    transition: all 0.5s ease;
 }
 
 a:visited {

@@ -35,7 +35,7 @@
 
 }
 
-.body {
+.bodyCard {
     margin: 0;
     width: 200px;
     height: 200px;
@@ -140,7 +140,7 @@
   
     width: 100%;
 
-    border-radius: 3rem 0rem 0rem 0rem;
+    border-radius: 1rem 0rem 10rem 0rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out;
 }
@@ -221,7 +221,21 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: .25rem;
+
+    transition: .5;
 }
+
+/* .cardTopContent i {
+    transition: .5;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.cardTopContent i:hover {
+    color: red;
+    transition: .5;
+    z-index: 6;
+} */
 
 .pagination {
     display: flex;
@@ -314,5 +328,20 @@
     }
 }
 
+.favoriteButton {
+  z-index: 1;
+  position: absolute;
+}
 
+.favoriteButton i {
+    cursor: pointer;
+    color: var(--txt-secondaryColorW);
 
+    border-radius: 4px;
+}
+
+.favoriteButton i:hover {
+    color: red;
+    transform: scale(1.5);
+    transition: .5;
+}

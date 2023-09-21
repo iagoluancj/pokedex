@@ -1,4 +1,4 @@
-.pokemons .body {
+.pokemons .bodyCard {
     display: inline-flex;
     justify-content: space-around;
     transition: 1s;

@@ -29,21 +29,39 @@
                 <img src="./src/imgs/pokemon-logo-8.png" alt="Logo pokemon">
                 <i class="material-icons" id="menuBurguer" onclick="openMenu()">menu</i>
                 <ul class="menuDesktop">
-                    <li class="dropDown__Itens"><i class="material-icons">home</i>Pagina Inicial</li>
-                    <li class="dropDown__Itens"><i class="material-icons">circle</i>Pokedex</li>
-                    <li class="dropDown__Itens"><i class="material-icons">favorite</i>Minha pokedex</li>
+                    <li class="dropDown__Itens">
+                        <span><i class="material-icons">home</i></span>
+                        <span><a href="./src/html/homePage.html">Pagina Inicial</a></span> 
+                    </li>
+                    <li class="dropDown__Itens" style="border-bottom: 2px solid rgba(212, 140, 6, 0.5);">
+                        <span><i class="material-icons">circle</i></span>
+                        <span><a href="./index.html">Pokedex</a></span>
+                    </li>
+                    <li class="dropDown__Itens">
+                        <span><i class="material-icons">favorite</i></span>
+                        <span><a href="/src/html/myPokedex.html">Minha pokedex</a></span>
+                    </li>
                 </ul>
             </div>
         </div>
         <menu id="menuNav">
             <ul class="dropDown">
-                <li class="dropDown__Itens"><i class="material-icons">home</i>Pagina Inicial</li>
-                <li class="dropDown__Itens"><i class="material-icons">circle</i>Pokedex</li>
-                <li class="dropDown__Itens"><i class="material-icons">favorite</i>Minha pokedex</li>
+                <li class="dropDown__Itens">
+                    <i class="material-icons">home</i>
+                    <a href="./src/html/homePage.html">Pagina Inicial</a>
+                </li>
+                <li class="dropDown__Itens">
+                    <i class="material-icons">circle</i>
+                    <a href="./index.html">Pokedex</a>
+                </li>
+                <li class="dropDown__Itens">
+                    <i class="material-icons">favorite</i>
+                    <a href="/src/html/myPokedex.html">Minha pokedex</a>
+                </li>
             </ul>
         </menu>
     </nav>
-
+    
     <section class="content">
         <div class="header">
             <h1 class="title">Pokedex</h1>

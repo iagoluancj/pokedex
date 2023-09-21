@@ -1,3 +1,7 @@
+nav {
+    line-height: 0; 
+}
+
 table {
     display: block;
     width: auto;
