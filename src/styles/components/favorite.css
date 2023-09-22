@@ -1,0 +1,24 @@
+.favoriteButton {
+    z-index: 1;
+    position: absolute;
+    transition: .5s;
+}
+
+.favoriteButton i {
+    cursor: pointer;
+    color: var(--txt-secondaryColorW);
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.favoriteButton i:hover {
+    color: red;
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.favoriteButton .favorited {
+    color: red;
+    transform: scale(1.5);
+    transition: .5s;
+}

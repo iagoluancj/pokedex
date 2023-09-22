@@ -1,0 +1,25 @@
+-------------- CONCLUIDO ------------------------------------------------------------------
+Menu vertical 
+-------------------------------------------------------------------------------------------
+Criar pagina inicial
+-------------------------------------------------------------------------------------------
+Criar minha pokedex
+-------------------------------------------------------------------------------------------
+Adcionar opção de pesquisa por nome e por type
+adcionar classe display: none; para os elementos que não tiverem os caracteres pesquisados. 
+-------------------------------------------------------------------------------------------
+Colocar para ao clicar no card virar o background de POKEMON, talvez só colocar um no onclick puxo o pokemon e adiciono uma classe de rotaçãoDEG. / RESOLVIDO.
+
+FAzer o icone FAV ficar em vermelho enquanto enquanto ekle estiver salvo / RESOLVIDO.
+-------------------------------------------------------------------------------------------
+
+
+-------------- Em andamento ------------------------------------------------------------------
+Minha pokedex (inserir os pokemons favoritos em minha pokedex) 
+-------------------------------------------------------------------------------------------
+Criar a aba de base status e preenche-la.;
+-------------------------------------------------------------------------------------------
+
+-------------- Em execuÇão ------------------------------------------------------------------
+Colocar opção para favoritar - favoritar e desaforitar no mesmo icone.
+

@@ -1,23 +1,22 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 15
-const limit = 5
+const maxRecords = 40
+const limit = 20
 let offset = 0;
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) => `
             <div class="bodyCard hide-card" id="fatherCard" data-pokemon=${JSON.stringify(pokemon)}>
-            
             <div class="favoriteButton">
-                <i class="material-icons ${pokemon.type}" onclick="addFavorite(this.closest('.bodyCard'))">favorite</i>
+                <i class="material-icons ${pokemon.type} IdFavorited" onclick="addFavorite(this.closest('.bodyCard'))">favorite</i>
             </div>
-
                 <div class="flip" id="card">
                     <div class="face" id="front">   
-                        <ol id="pokemonList" class="pokemonsOl">    
-                            <li class="pokemon ${pokemon.type}"  id="openModalBtn">
+                        <ol id="pokemonList" class="pokemonsOl">
+                        <div class="rotate ${pokemon.type}">   
+                            <li class="pokemon"  id="openModalBtn">
                                 <div class="cardTopContent">
                                     <span class="number">#${pokemon.number}</span>
                                 </div>
@@ -32,12 +31,12 @@ function loadPokemonItens(offset, limit) {
                                     </div>
                                 </div>
                             </li>
+                        </div> 
                         </ol>
                     </div>
                     <div class="face" id="back">
                         <ol id="pokemonList" class="pokemonsOl">    
                             <li class="pokemon ${pokemon.type}"  id="openModalBtn">
-                            
                                 <span class="number">#${pokemon.number}</span>
                                 <span class="name">${pokemon.name}</span>
                                 <div class="detail">
@@ -104,8 +103,6 @@ function loadPokemonItens(offset, limit) {
         pokemonList.innerHTML += newHtml;
 
         const cards = document.querySelectorAll("#card");
-        const pokemon = document.querySelectorAll("#pokemon"); // criar função para girar o POKEMON - use o parentnode.
-
         cards.forEach((card) => {
             card.addEventListener("click", function () {
                 setTimeout(function () {
