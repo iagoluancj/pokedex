@@ -22,3 +22,44 @@
     transform: scale(1.5);
     transition: .5s;
 }
+
+#favoritesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.favorited__Pokemon {
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    padding: .5rem;
+
+    background-color: var(--bg-primaryColorY);
+}
+
+.favorited__Details {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorited__Details img {
+    width: 100px;
+    max-width: 100%;
+}
+
+.caraPrecisaMudarEsseNome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spans {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorited__specificeDetails {
+    display: flex;
+    flex-direction: column;
+}

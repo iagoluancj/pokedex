@@ -21,20 +21,15 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 pokeApi.getPokemonDetail = (pokemon) => {
     return fetch(pokemon.url)
         .then((response) => response.json())
-        // .then(convertPokeApiDetailToPokemon)
         .then((pokeDetail) => {
-            // Chame a função convertPokeApiDetailToPokemon para obter os detalhes do Pokémon
             const convertedPokemon = convertPokeApiDetailToPokemon(pokeDetail);
             
-            // Faça uma solicitação separada para obter os detalhes da espécie do Pokémon
             return fetch(pokeDetail.species.url)
                 .then((response) => response.json())
                 .then((speciesData) => {
-                    // Acesse as informações sobre grupos de ovos a partir dos detalhes da espécie
                     const eggGroups = speciesData.egg_groups.map((group) => group.name);
                     convertedPokemon.eggGroups = eggGroups;
 
-                    // Retorne o objeto Pokémon com as informações adicionais
                     return convertedPokemon;
                 });
         });

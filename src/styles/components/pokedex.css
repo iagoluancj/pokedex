@@ -158,7 +158,7 @@
 
 .rotate {
     transform: rotateX(180deg);
-    border-radius: 9rem 0rem 1rem 0rem;
+    border-radius: 50%;
 }
 
 .divDeOpacity {

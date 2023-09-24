@@ -83,7 +83,7 @@ function loadPokemonItens(offset, limit) {
                                             </tr>
                                             <tr>
                                                 <th>Egg Groups:</th>
-                                                <td>${pokemon.eggGroups}</td>
+                                                <td>${pokemon.eggGroups.join(', ')}</td>
                                             </tr>
                                             <tr>
                                                 <th>Egg Cycle:</th>
